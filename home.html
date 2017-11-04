@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>The Vending Machine</title>
+    <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/home.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="row" id="divHeader" style="text-align:center">
+            <h1 class="page-header">Vending Machine</h1>
+        </div>
+
+        <div class="row" id="divDetail">
+            <div class="col-xs-9" id="divItem" style="height:100%; text-align:center">
+                <!-- Add List of Item here -->
+
+            </div>
+            <div class="col-xs-3" id="divBill">                
+                    <div class="row" id="divTotal">
+                        <div class="col-xs-12">
+                            <div class="row" style="margin-bottom:5px">
+                                <div class="col-xs-12">
+                                    <h4 style="text-align:center">Total $ In</h4>
+                                    <input type="text" id="txtTotal" class="form-control" style="text-align:center; font-weight:bold;" readonly />
+                                </div>
+                            </div>
+                            <div class="row" style="margin-bottom:5px">
+                                <div class="col-xs-6">
+                                    <input type="button" id="btnDollar" value="Add Dollar" data-amount = "100" class="btn btn-default" style="width:100%;" />
+                                </div>
+                                <div class="col-xs-6">
+                                    <input type="button" id="btnQuater" value="Add Quater" data-amount = "25" class="btn btn-default" style="width:100%;" />
+                                </div>
+                            </div>
+                            <div class="row" style="margin-bottom:5px">
+                                <div class="col-xs-6">
+                                    <input type="button" id="btnDime" value="Add Dime" data-amount = "10" class="btn btn-default" style="width:100%;" />
+                                </div>
+                                <div class="col-xs-6">
+                                    <input type="button" id="btnNickel" value="Add Nickel" data-amount = "5" class="btn btn-default" style="width:100%;" />
+                                </div>
+
+                            </div>
+
+                            <hr />
+                        </div>
+                    </div>
+                    
+                    <div class="row" id="divMessage">
+                        <div class="col-xs-12">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <h4 style="text-align:center">Messages</h4>
+                                </div>
+                            </div>
+                            <div class="row" style="margin-bottom:5px">
+                                <div class="col-xs-12">
+                                    <input type="text" id="txtMessage" class="form-control" style="text-align:center; font-weight:bold;" readonly />
+                                </div>
+                            </div>
+                            <div class="row" style="margin-bottom:5px">
+                                <div class="col-xs-2">
+                                    <h5>Item:</h5>
+                                </div>
+                                <div class="col-xs-10">
+                                    <input type="text" id="txtItemID" class="form-control" style="text-align:center; font-weight:bold;" readonly />
+                                </div>
+                            </div>
+                            <div class="row" style="margin-bottom:5px">
+                                <div class="col-xs-12">
+                                    <input type="button" id="btnPurchase" value="Make Purchase" class="btn btn-default" style="width:100%" />
+                                </div>
+                            </div>
+                            <hr />
+                        </div>
+                    </div>
+
+                    <div class="row" id="divChange">
+                        <div class="col-xs-12">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <h4 style="text-align:center">Change</h4>
+                                </div>
+                            </div>
+                            <div class="row" style="margin-bottom:5px">
+                                <div class="col-xs-12">
+                                    <input type="text" id="txtChange" class="form-control" style="text-align:center; font-weight:bold;" readonly />
+                                </div>
+                            </div>
+                            <div class="row" style="margin-bottom:5px">
+                                <div class="col-xs-12">
+                                    <input type="button" id="btnReturn" value="Change Return" class="btn btn-default" style="width:100%" />
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    <script src="Scripts/jquery-3.2.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/home.js"></script>
+
+
+
+
+ 
+
+</body>
+</html>
